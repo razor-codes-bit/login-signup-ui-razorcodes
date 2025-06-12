@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Razor Coder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form class="form active">
+      <h2>Login</h2>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <label class="show-pass">
+        <input type="checkbox" onclick="togglePassword(this)" />
+        <span>Show password</span>
+      </label>
+      <a href="#" class="form-link">Forgot your password?</a>
+      <button type="submit">Login</button>
+      <div class="social-login">
+        <button class="google-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" class="icon" />
+          Login with Google
+        </button>
+        <button class="facebook-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" class="icon" />
+          Login with Facebook
+        </button>
+      </div>
+      <p class="redirect-msg">Don't have an account? <a href="signup.html">Signup here</a></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

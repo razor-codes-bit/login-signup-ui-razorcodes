@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup | Razor Coder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form class="form active">
+      <h2>Signup</h2>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <label class="show-pass">
+        <input type="checkbox" onclick="togglePassword(this)" />
+        <span>Show password</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" required />
+        <span>I agree to the Terms & Conditions</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" />
+        <span>Subscribe me to the newsletter</span>
+      </label>
+      <button type="submit">Create Account</button>
+      <div class="social-login">
+        <button class="google-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" class="icon" />
+          Signup with Google
+        </button>
+        <button class="facebook-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" class="icon" />
+          Signup with Facebook
+        </button>
+      </div>
+      <p class="redirect-msg">Already have an account? <a href="login.html">Login here</a></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
